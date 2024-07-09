@@ -1,0 +1,122 @@
+/* reset code starts */
+:root {
+    --primaryColor:#9EAD2D;
+    --secondaryColor: #F3F3F3;
+    --defaultMargin: 0px 50px 0px 50px ;
+
+  }
+  
+  * {
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    width: 100px;
+    height: auto;
+  }
+  
+  .flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+/* reset code ends */
+
+/* navbar start here  */
+nav {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .nav_upper {
+    max-height: 100vh;
+    padding: 0.4rem;
+    text-align: center;
+    margin: var(--defaultMargin) ;
+  }
+
+
+  .nav_list:hover{
+    text-transform: capitalize;
+    color: orange;
+  }
+  .nav_link {
+    color: var(--primaryColor);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all .3s;
+    color: var(--primaryColor);
+  }
+  .nav_link:hover {
+    color: olivedrab;
+    text-decoration: none;
+  }
+.search_box{
+  position: relative;
+}
+.search_box input {
+  width: 250px;
+  font-size: 1rem;
+  padding: 10px 10px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: 0.4s ease-in-out;
+}
+.search_box input:focus{
+  width: 370px;
+}
+.search_box i{
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: #555;
+  cursor: pointer;
+}
+  /* start nav lower design */
+  .nav_lower {
+    padding: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: var(--secondaryColor);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.11);
+
+  }
+  .nav_lower .nav_link {
+    color: #000;
+    text-decoration: none;
+  }
+  .nav_lower .nav_link:hover {
+    color: var(--primaryColor);
+    text-decoration: none;
+    border-bottom: orange 1px solid;
+  }
+    /* ends nav lower design */
+
+  /* navbar ends here  */
