@@ -100,6 +100,10 @@ nav {
   cursor: pointer;
 }
   /* start nav lower design */
+  #icon{
+    display: none;
+    transition: all .5s;
+  }
   .nav_lower {
     padding: 1rem;
     text-transform: capitalize;
@@ -137,6 +141,7 @@ nav {
        flex-direction: column;
        justify-items: center;
        width: 300px;
+       margin-left: 20px;
 
     }
     .nav_upper{
@@ -148,6 +153,15 @@ nav {
       }
       .search_box input:focus{
         width: 200px;
+      }
+      #icon{
+        display: block;
+        text-align: left;
+        margin-left:20px;
+        cursor: pointer;
+      }
+      .hidden{
+        display: none;
       }
   
   }
