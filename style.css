@@ -111,6 +111,7 @@ nav {
   .nav_lower .nav_link {
     color: #000;
     text-decoration: none;
+    margin: 30px;
   }
   .nav_lower .nav_link:hover {
     color: var(--primaryColor);
@@ -120,3 +121,94 @@ nav {
     /* ends nav lower design */
 
   /* navbar ends here  */
+
+
+/* responsive starts */
+
+@media screen, (max-width:992px) {
+    .nav_lower {
+        display: flex;
+        flex-wrap: wrap;      
+    }
+    
+  }
+  @media (max-width:514px) {
+    .nav_lower {
+       flex-direction: column;
+       justify-items: center;
+       width: 300px;
+
+    }
+    .nav_upper{
+        margin: 0px 0px 0px 50px;
+    }
+
+    .search_box input{
+        width: 200px;
+      }
+      .search_box input:focus{
+        width: 200px;
+      }
+  
+  }
+    
+  @media (max-width:420px) {
+    .nav_lower {
+       flex-direction:column ;
+       width: 250px;
+
+    }
+    .nav_upper{
+        width: 100px;
+    }
+    .nav_list{
+        margin-top: 10px;
+        margin-right: 20px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+    }
+    .branding{
+        width: 60px;
+    }
+    .search_box input{
+        width: 160px;
+    }
+    .search_box input:focus{
+        width: 160px;
+    }
+   
+  }
+  @media (max-width:300px) {
+
+    .nav_lower {
+       flex-direction:column ;
+       width: 250px;
+    }
+    
+    .nav_upper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav_list{
+        margin-top: 10px;
+        margin-right: 20px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+    }
+    .branding{
+        width: 30px;
+        margin-left: -20px;
+    }
+    .search_box input{
+        width: 140px;
+    }
+   .search_box i{
+    display: none;
+   }
+   
+  }
+/* responsive ends */
