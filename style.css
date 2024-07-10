@@ -3,6 +3,7 @@
     --primaryColor:#9EAD2D;
     --secondaryColor: #F3F3F3;
     --defaultMargin: 0px 50px 0px 50px ;
+    --boxShadow:0px 2px 5px rgba(0, 0, 0, 0.11);
 
   }
   
@@ -57,6 +58,8 @@ nav {
     padding: 0.4rem;
     text-align: center;
     margin: var(--defaultMargin) ;
+    background-color: #fff;
+    opacity: .9;
   }
 
 
@@ -109,7 +112,7 @@ nav {
     text-transform: capitalize;
     text-align: center;
     background-color: var(--secondaryColor);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.11);
+    box-shadow: var(--boxShadow);
 
   }
   .nav_lower .nav_link {
@@ -130,14 +133,29 @@ nav {
   /* navbar ends here  */
 
   /* header starts */
- 
 
   .header_img img{
     width: 90%;
+    margin: 30px;
     image-resolution: 2440px;
-
+    box-shadow: var(--boxShadow);
   }
+    /* header ends */
 
+    /* main start */
+
+    /* main start */
+
+    /* footer starts */
+    .footer {
+      display: flex;
+      padding: 70px;
+      background-color: var(--secondaryColor);
+      color: #000;
+      margin-bottom: 0;
+      position: relative;
+    }
+    /* footer ends */
 
 /* responsive starts */
 
@@ -162,7 +180,7 @@ nav {
     }
    
     .nav_upper{
-        margin: 0px 0px 0px 50px;
+        margin: 0px 0px 0px 0px;
     }
 
     .search_box input{
@@ -176,6 +194,7 @@ nav {
         text-align: left;
         margin-left:20px;
         cursor: pointer;
+        color: var(--primaryColor);
       }
       .hidden{
         display: none;
@@ -189,9 +208,7 @@ nav {
        width: 250px;
 
     }
-    .nav_upper{
-        width: 100px;
-    }
+
     .nav_list{
         margin-top: 10px;
         margin-right: 20px;
@@ -210,7 +227,7 @@ nav {
         width: 160px;
     }
     .header_img img{
-      width: 93%;
+      width: 91%;
       image-resolution: 2440px;
     }
    
@@ -247,6 +264,10 @@ nav {
    }
    .header_img img{
     width: 93%;
+    image-resolution: 2440px;
+  }
+  .header_img img{
+    width: 89%;
     image-resolution: 2440px;
   }
    
