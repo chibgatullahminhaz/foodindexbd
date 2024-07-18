@@ -8,4 +8,3 @@ if (menu.className ==="hidden"){
     menu.classList.add("hidden")
 }
 })
-console.log("hello")

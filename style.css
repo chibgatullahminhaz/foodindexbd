@@ -148,20 +148,7 @@ nav {
       flex: 4;
       padding: var(--padding);
     }
-    .actions_sort select {
-      padding: 0.7rem;
-      justify-content: flex-start;
-      font-size: 1rem;
-    }
-    .action_search {
-      display: flex;
-    }
-    .action_search input {
-      text-align: center;
-    }
-    .action_search button {
-      border: 1px solid black;
-    }
+   
     
     .products {
       display: grid;
@@ -179,144 +166,66 @@ nav {
       padding: var(--padding);
      border-radius: var(--borderRedius);
     }
-    .badge {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: red;
-      color: #fff;
-      padding: 4px 8px;
-      text-align: center;
-      justify-content: flex-start;
-      border-radius: var(--borderRedius);
-      z-index: 10;
-    }
-    .badge hr {
-      width: 100%;
-      margin: 3px;
-      margin: 4px;
-      background-color: #fff;
     
-      
-    }
+   
     .product_img {
       min-width: 100%;
-      filter: saturate(0);
-      transition: var(--transition);
-    }
-    .product_img:hover {
       filter: saturate(1);
-    }
-    .product_body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1;
-    }
-    .product_name {
-      color: green;
-      margin-top: 1rem;
-      justify-self: flex-start;
-      margin-bottom: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-weight: bolder;
-      opacity: .6;
-      
-    }
-    .product_name:hover{
-     cursor: pointer;
-     color: red;
-    }
-    .product_discription {
-        margin: 0;
-        margin-top: 0;
-        justify-self: flex-start;
-        line-height: 17px;
-        text-align: left;
-    }
-    .product_discription a{
-        color: green;
-    }
-    .product_price {
-        font-weight: bolder;
-        margin: 0;
-        padding: 3px;
-    }
-    .product_rating {
-        font-size: 1rem;
-        margin: 0;
-        padding: 3px;
-        color: green;
-    }
-    .buttons {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 0;
-    }
-    .add_cart {
-      min-height: 30px;
-      border: none;
-      flex: 1;
-      justify-content: space-between;
-      border-radius: var(--borderRedius);
-      background-color: red;
-      color: #fff;
       transition: var(--transition);
-    }
-    .buy {
-      min-height: 30px;
-      border: none;
-      flex: 1;
-      border-radius: var(--borderRedius);
-      background-color: darkblue;
-      color: #fff;
-      transition: var(--transition);
-    }
-    .buy:hover {
-      background-color: #e0dee4;
-      color: red;
-    }
-    .add_cart:hover {
-      background-color: #1a1a1a;
-      color: whitesmoke;
-    }
-    .dot{
-      height: 30px;
-      width: 30px;
-      border-radius: 50%;
-      display: inline-block;
-    }
-    .black{
-      background-color: black;
-    }
-    .green{
-      background-color: green;
-    }
-    .red{
-      background-color: red;
-    }
-    .pagination{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    .pagination_button:hover{
-      background-color: darkblue;
-      color: yellow;
-    
     }
     /* main start */
 
     /* footer starts */
     .footer {
-      display: flex;
-      padding: 70px;
+      padding: 30px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 1rem;
       background-color: var(--secondaryColor);
       color: #000;
       margin-bottom: 0;
       position: relative;
     }
+    .branding{
+      margin-bottom: 30px;
+    }
+    .subscribe-newsletter{
+      text-transform: capitalize;
+     
+    }
+   .footer_heading{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+   }
+    .payment_method img{
+      max-width:10px ;
+      
+    }
+    .sub-subscribe{
+      position: relative;
+    }
+    .sub-subscribe input {
+      width: 250px;
+      font-size: .8rem;
+      font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      padding: 10px 10px;
+      border-radius: 25px;
+      border: none;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+      transition: 0.4s ease-in-out;
+    }
+    .sub-subscribe input:focus{
+      width: 300px;
+    }
+    .sub-subscribe a{
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      color: #555;
+      cursor: pointer;
+    }
+   
     /* footer ends */
 
 /* responsive starts */
