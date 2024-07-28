@@ -41,6 +41,17 @@
     justify-content: space-around;
     align-items: center;
   }
+  .footer_heading{
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color:var(--primaryColor);
+  }
+
+  .branding{
+    margin-bottom: 30px;
+    color: green;
+  }
 /* reset code ends */
 
 /* navbar start here  */
@@ -185,21 +196,30 @@ nav {
       margin-bottom: 0;
       position: relative;
     }
-    .branding{
-      margin-bottom: 30px;
-    }
+ 
     .subscribe-newsletter{
       text-transform: capitalize;
      
     }
-   .footer_heading{
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    text-transform: capitalize;
-   }
+
     .payment_method img{
       max-width:10px ;
       
+    }
+    .sub_footer_list{
+      color: #000 !important;
+    }
+    .sub_footer_link{
+        color: #000;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: all .3s;
+    }
+    .sub_footer_link:hover {
+      color: olivedrab;
+      text-decoration: none;
+      border-bottom: 1px solid var(--primaryColor);
     }
     .sub-subscribe{
       position: relative;
@@ -230,6 +250,7 @@ nav {
    .sub_title{
     font-weight: 600;
    }
+
     /* footer ends */
 
 /* responsive starts */
