@@ -203,6 +203,7 @@ nav {
     }
     .sub-subscribe{
       position: relative;
+      top: 20px;
     }
     .sub-subscribe input {
       width: 250px;
@@ -225,7 +226,10 @@ nav {
       color: #555;
       cursor: pointer;
     }
-   
+     
+   .sub_title{
+    font-weight: 600;
+   }
     /* footer ends */
 
 /* responsive starts */
