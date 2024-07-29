@@ -8,6 +8,7 @@ function App() {
     <>
     
       <h1>Food index-bd</h1>
+      <h1>Welcome to our website</h1>
      
     </>
   )
