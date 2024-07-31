@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
     return (
         <>
-        <h1>Footer Compunent</h1>
-    </>
+        <h1>footer com</h1>
+        </>
     )
 }
 
